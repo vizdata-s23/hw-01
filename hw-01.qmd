@@ -1,9 +1,7 @@
 ---
 title: "Homework 01"
 author: "INSERT YOUR NAME HERE"
-format: 
-  html:
-    embed-resources: true
+format: html
 toc: true
 ---
 
