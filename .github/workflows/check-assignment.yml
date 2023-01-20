@@ -28,7 +28,7 @@ jobs:
       shell: Rscript {0}
     - name: Install dsbox
       run: |
-        devtools::install_github("rstudio-education/dsbox")
+        remotes::install_github("rstudio-education/dsbox")
       shell: Rscript {0}
     - name: Check Renders
       run: |
