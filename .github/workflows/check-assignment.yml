@@ -24,14 +24,14 @@ jobs:
       uses: actions/checkout@master
     - name: Install Missing Packages
       run: |
-        missing = checklist::install_missing_pkgs(dir = "./", glob = "hw1.qmd")
+        missing = checklist::install_missing_pkgs(dir = "./", glob = "hw-01.qmd")
       shell: Rscript {0}
     - name: Check Renders
       run: |
-        checklist::check_qmd_renders("hw1.qmd")
+        checklist::check_qmd_renders("hw-01.qmd")
       shell: Rscript {0}
     - name: Create artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: hw1-html
-        path: hw1.html
+        name: hw-01-html
+        path: hw-01.html
