@@ -16,6 +16,8 @@ jobs:
       shell: Rscript {0}
   
   check-renders:
+    env:
+      GITHUB_PAT: ${{ secrets.GH_PAT }}
     runs-on: self-hosted
     container:
       image: ghcr.io/dukestatsci/r_gh_actions:latest
